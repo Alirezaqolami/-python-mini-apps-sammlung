@@ -1,129 +1,163 @@
 # Python Mini Applications Sammlung 🐍
 
-📖 Projektübersicht
-Eine umfassende Sammlung von Python-Anwendungen, die verschiedene Aspekte der Softwareentwicklung demonstrieren - von Web-Scraping über Wettervorhersagen bis hin zur Bildverarbeitung.
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Automation](https://img.shields.io/badge/🤖-Automatisierung-green.svg)
+![GUI](https://img.shields.io/badge/🖥️-GUI_Apps-orange.svg)
 
-🎯 Projekte im Überblick
-⌨️ Tipptrainer - TippTrainer.py
-Interaktiver Tippgeschwindigkeitstrainer
 
-📊 Echtzeit-Statistiken (WPM, Genauigkeit)
+## 📦 PROJEKTÜBERSICHT
+Eine umfassende Sammlung von Python-Anwendungen, die verschiedene Aspekte der Softwareentwicklung demonstrieren. Ideal für Bewerbungen als Anwendungsentwickler in Deutschland.
 
-📈 Verlaufsdiagramme mit matplotlib
+## 🎯 ENTHALTENE PROJEKTE
 
-🌙 Dark/Light Mode Umschaltung
+### 1. 🖋️ TIPPTRAINER
+**Datei:** TippTrainer.py
+**Beschreibung:** Ein interaktives Tipptraining-Programm zur Verbesserung der Tippgeschwindigkeit und Genauigkeit.
 
-💾 Automatische Speicherung des Trainingsverlaufs
+**Funktionen:**
+- Zufällige deutsche Sätze zum Abtippen
+- Echtzeit-Statistiken (WPM, Genauigkeit, Zeit)
+- Dunkel/Hell-Modus Umschaltung
+- Verlaufsdiagramme der letzten 10 Versuche
+- Automatische Speicherung des Trainingsverlaufs
 
-Features:
+**Verwendung:**
+python TippTrainer.py
 
-Verschiedene Schwierigkeitsgrade mit deutschen Sätzen
+### 2. 🌦️ WETTERVORHERSAGE
+**Datei:** Wetter.py
+**Beschreibung:** Echtzeit-Wettervorhersage für Städte weltweit mit API-Integration.
 
-Fortschrittsverfolgung über mehrere Trainingseinheiten
+**Funktionen:**
+- Wetterdaten von WeatherAPI
+- Temperatur in Celsius
+- Wetterbedingungen in Deutsch
+- Dunkelmodus-Unterstützung
+- Schnellsuche mit Enter-Taste
 
-Responsive GUI mit ttkbootstrap
+**API-Konfiguration:**
+- API Key erforderlich von weatherapi.com
+- Aktueller Key in Code vorhanden
 
-JSON-basierte Datenspeicherung
+**Verwendung:**
+python Wetter.py
 
-🌦️ Wettervorhersage - Wetter.py
-Echtzeit-Wettervorhersage App
+### 3. 🎬 FILMEMPFEFEHLER
+**Datei:** Movie_Suggester.py
+**Beschreibung:** Intelligentes Filmempfehlungssystem basierend auf TMDB-Datenbank.
 
-🌍 Weltweite Wetterabfragen
+**Funktionen:**
+- Ähnliche Filme finden
+- Vollbildmodus (F11)
+- Kopieren der Liste in Zwischenablage
+- Persische Schriftunterstützung
+- Dunkles Design
 
-🌡️ Temperatur in Celsius
+**API:**
+- The Movie Database (TMDB) API
+- Aktueller Key integriert
 
-☁️ Detaillierte Wetterbedingungen
+**Verwendung:**
+python "Movie_Suggester.py"
 
-🎨 Anpassbare Oberfläche
+### 4. 🖼️ BILDVERARBEITUNG - DREI ANWENDUNGEN
 
-Features:
+#### A) Stapelbild-Verarbeiter (fold.py)
+**Funktion:** Batch-Verarbeitung mehrerer Bilder
+- Größenänderung auf 1200x800 Pixel
+- Konvertierung zu WEBP-Format
+- Automatische Namensbereinigung
 
-Integration mit WeatherAPI
+#### B) Hintergrund-Entferner (image_G.py)
+**Funktion:** Automatische Hintergrundentfernung
+- Entfernt Bildhintergrund mit rembg
+- Ersetzt durch weißen Hintergrund
+- Größenanpassung auf 800x800
 
-Deutsche Sprachausgabe
+#### C) Bildgrößen-Anpassung (Image_800.py)
+**Funktion:** Einfache Größenänderung
+- Skaliert Bilder auf 800x800
+- WEBP-Konvertierung
+- Verarbeitet neueste Datei im Ordner
 
-Dark/Light Mode
+**Verwendung:**
+python Stapelbild-Verarbeiter.py
+python Hintergrund-Entferner.py
+python Bildgroessen-Aenderung.py
 
-Einfache und intuitive Bedienung
+## 🛠️ TECHNISCHE VORAUSSETZUNGEN
 
-🎬 Filmempfehler - Movie_Suggester.py
-Intelligentes Filmempfehlungssystem
+### Python Version
+- Python 3.8 oder höher
 
-🎭 Ähnliche Filme finden
+### Installation aller Abhängigkeiten:
+pip install -r requirements.txt
 
-📋 Kopieren zur Zwischenablage
+### Requirements.txt Inhalt:
+tkinter==0.1.0
+ttkbootstrap==1.10.1
+requests==2.31.0
+matplotlib==3.7.2
+Pillow==10.0.1
+rembg==2.0.50
+pyperclip==1.8.2
+opencv-python==4.8.1.78
+numpy==1.24.3
 
-🖥️ Vollbildmodus unterstützung
+## 📁 PROJEKTSTRUKTUR
 
-🎪 TheMovieDB Integration
+python-mini-apps-sammlung/
+│
+├── 📄 TippTrainer.py
+├── 📄 Wetter.py
+├── 📄 Movie_Suggester.py
+├── 📁 bildverarbeiter/
+│   ├── 📄 Stapelbild-Verarbeiter.py
+│   ├── 📄 Hintergrund-Entferner.py
+│   └── 📄 Bildgroessen-Aenderung.py
+├── 📄 requirements.txt
+└── 📄 README.md
 
-Features:
+## 🚀 SCHNELLSTART
 
-API-basierte Filmdatenbank
+1. Repository klonen:
+git clone https://github.com/[username]/python-mini-apps-sammlung.git
 
-Schnelle Suchfunktion
+2. Abhängigkeiten installieren:
+pip install -r requirements.txt
 
-Einfache Listenverwaltung
+3. Gewünschte Anwendung starten:
+python TippTrainer.py
 
-Moderne GUI
+## ⚙️ KONFIGURATION
 
-🖼️ Bildverarbeiter Suite
-1. Bildgrößenänderung - Bildgroessen_Aenderung.py
-Automatische Bildgrößenanpassung
+### API Keys:
+- WeatherAPI: In Wetter.py integriert
+- TMDB: In Movie_Suggester.py integriert
 
-📐 Präzise Größenänderung auf 800x800
+### Pfade anpassen:
+In den Bildverarbeitungs-Skripten die Pfade anpassen:
+input_folder = "C:/Users/DELL/Desktop/img1"
+output_folder = "C:/Users/DELL/Desktop/img2"
 
-🔄 Formatkonvertierung zu WEBP
+## 🎨 BESONDERE FUNKTIONEN
 
-⚡ Verarbeitung des neuesten Bildes
+### TippTrainer:
+- JSON-basierte Speicherung des Verlaufs
+- Matplotlib-Diagramme für Fortschritt
+- Responsive GUI mit ttkbootstrap
 
-💾 Benutzerdefinierte Dateinamen
+### Wettervorhersage:
+- Echtzeit-Datenabfrage
+- Deutsche Lokalisierung
+- Elegante Fehlerbehandlung
 
-2. Hintergrundentferner - Hintergrund_Entferner.py
-Professionelle Hintergrundentfernung
+### Filmempfehler:
+- Vollbild-Unterstützung
+- Zwischenablage-Integration
+- Persische Schriftkompatibilität
 
-🎭 Automatische Hintergrundentfernung
-
-⚪ Weißer Hintergrund-Ersatz
-
-📏 Größenoptimierung auf 800x800
-
-🎯 Rembg Integration für beste Ergebnisse
-
-3. Stapelbildverarbeiter - Stapelbild_Verarbeiter.py
-Batch-Bildverarbeitungstool
-
-📦 Massenverarbeitung von Bildern
-
-🛠️ Größenanpassung auf 1200x800
-
-🧹 Automatische Namensbereinigung
-
-🎨 WEBP-Konvertierung
-
-🛠️ Technologien & Abhängigkeiten
-Core Technologies:
-Python 3.8+ - Hauptprogrammiersprache
-
-Tkinter - GUI Framework
-
-ttkbootstrap - Moderne UI Komponenten
-
-APIs & Services:
-WeatherAPI - Wetterdaten
-
-TheMovieDB - Filminformationen
-
-Bildverarbeitung:
-Pillow - Bildbearbeitung
-
-Rembg - Hintergrundentfernung
-
-OpenCV - Computer Vision
-
-NumPy - Mathematische Operationen
-
-Daten & Visualisierung:
-Matplotlib - Diagramme und Statistiken
-
-JSON - Datenspeicherung
+### Bildverarbeitung:
+- Batch-Verarbeitung
+- Automatische Formatkonvertierung
+- Hintergrundentfernung mit KI
